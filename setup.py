@@ -77,6 +77,15 @@ def install_requirements():
         print(Fore.RED + "requirements.txt not found.")
 
 
+    fastfetch_path = os.path.join(DOWNLOAD_DIR,"fastfetch")
+    if not os.path.exists(fastfetch_path):
+        print(Fore.RED + "fastfetch not found in the project.")
+        return
+    else:
+    	run_command(["chmod","+x",fastfetch_path])
+    	print(Fore.GREEN + "fastfetch setup completed.")
+
+
 ###    START FUNCTION   ###
 def start_app():
     """Starts the Flask application by activating the virtual environment and running app.py"""
@@ -86,6 +95,14 @@ def start_app():
 
     activate_venv = os.path.join(VENV_DIR, "bin", "activate")
     app_file = os.path.join(DOWNLOAD_DIR, "app.py")
+
+
+    fastfetch_path = os.path.join(DOWNLOAD_DIR,"fastfetch")
+    if not os.path.exists(fastfetch_path):
+        print(Fore.RED + "fastfetch not found in the project.")
+    else:
+    	run_command([fastfetch_path])
+
 
     if not os.path.exists(app_file):
         print(Fore.RED + "app.py not found in the project.")
@@ -98,6 +115,9 @@ def start_app():
     except subprocess.CalledProcessError as e:
         print(Fore.RED + f"Error: {e}")
         sys.exit(1)
+    
+
+
 
 
 ###    RESTART FUNCTION    ###
