@@ -52,6 +52,12 @@ def download_project():
 
     print(Fore.GREEN + "Downloading Project...")
     run_command(["git", "clone", GITHUB_REPO, DOWNLOAD_DIR])
+    subprocess.run("mkdir /application/data", shell=True, check=True, executable='/bin/bash')
+    subprocess.run("mkdir /application/data/firefox", shell=True, check=True, executable='/bin/bash')
+    subprocess.run("mkdir /application/data/firefox/history", shell=True, check=True, executable='/bin/bash')
+    subprocess.run("mkdir /application/data/firefox/bookmarks", shell=True, check=True, executable='/bin/bash')
+    subprocess.run("mkdir /application/data/bash_history", shell=True, check=True, executable='/bin/bash')
+
     print(Fore.GREEN + "Project Downloaded Successfully")
 
 
