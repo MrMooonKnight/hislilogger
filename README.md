@@ -4,13 +4,13 @@
 
 ---
 
-# **Introduction** {#introduction}
+# **Introduction** 
 
 Hislilogger is a comprehensive digital forensics tool designed to extract, process, and visualise key pieces of forensic data from a user's system. It is built using Python and Flask and provides a web-based interface where you can analyse various forensic artefacts such as browser history, bookmarks, system services, installed software, and more.
 
 ---
 
-# **Use Case** {#use-case}
+# **Use Case** 
 
 Hislilogger is ideal for:
 
@@ -20,7 +20,7 @@ Hislilogger is ideal for:
 
 ---
 
-# **Purpose** {#purpose}
+# **Purpose** 
 
 The purpose of Hislilogger is to provide a user-friendly tool that simplifies the process of gathering and analysing forensic data. The project covers:
 
