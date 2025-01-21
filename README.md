@@ -149,8 +149,34 @@ The purpose of Hislilogger is to provide a user-friendly tool that simplifies th
 
 # **File Structure** {#file-structure}
 
-| hislilogger ├── application│   ├── app.py                      \# Main Flask application│   ├── data                        \# Directory for storing the extracted data│   │   ├── bash\_history            \# Stores extracted Bash history in JSON format│   │   ├── firefox│   │       ├── bookmarks           \# Stores extracted Firefox bookmarks in JSON format│   │       └── history             \# Stores extracted Firefox history in JSON format│   │   ├── recently\_used           \# Stores extracted recently used files in JSON format│   │   ├── services                \# Stores extracted system services in JSON format│   │   └── softwares               \# Stores extracted installed software data in JSON format│   ├── getBashHistory.py           \# Script for extracting Bash history│   ├── getBookmarks.py             \# Script for extracting Firefox bookmarks│   ├── getHistory.py               \# Script for extracting Firefox browsing history│   ├── getRecentlyUsed.py          \# Script for extracting metadata from recently used files│   ├── getServices.py              \# Script for extracting system services│   ├── getSoftwares.py             \# Script for extracting installed software│   ├── requirements.txt            \# Project dependencies│   └── templates                   \# HTML templates for rendering the web interface│       ├── index.html              \# Homepage│       ├── firefoxhistory.html     \# Firefox history page│       ├── firefoxbookmarks.html   \# Firefox bookmarks page│       ├── bashhistory.html        \# Bash history page│       ├── services.html           \# System services page│       ├── softwares.html          \# Installed software page│       └── view\_\*.html             \# View templates for displaying extracted data├── README.md                       \# Project README└── setup.py                        \# Setup script for installing and running the project |
-| :---- |
+| hislilogger 
+├── application
+│   ├── app.py                      \# Main Flask application
+│   ├── data                        \# Directory for storing the extracted data
+│   │   ├── bash\_history            \# Stores extracted Bash history in JSON format
+│   │   ├── firefox
+│   │       ├── bookmarks           \# Stores extracted Firefox bookmarks in JSON format
+│   │       └── history             \# Stores extracted Firefox history in JSON format
+│   │   ├── recently\_used           \# Stores extracted recently used files in JSON format
+│   │   ├── services                \# Stores extracted system services in JSON format
+│   │   └── softwares               \# Stores extracted installed software data in JSON format
+│   ├── getBashHistory.py           \# Script for extracting Bash history
+│   ├── getBookmarks.py             \# Script for extracting Firefox bookmarks
+│   ├── getHistory.py               \# Script for extracting Firefox browsing history
+│   ├── getRecentlyUsed.py          \# Script for extracting metadata from recently used files
+│   ├── getServices.py              \# Script for extracting system services
+│   ├── getSoftwares.py             \# Script for extracting installed software
+│   ├── requirements.txt            \# Project dependencies
+│   └── templates                   \# HTML templates for rendering the web interface
+│       ├── index.html              \# Homepage
+│       ├── firefoxhistory.html     \# Firefox history page
+│       ├── firefoxbookmarks.html   \# Firefox bookmarks page
+│       ├── bashhistory.html        \# Bash history page
+│       ├── services.html           \# System services page
+│       ├── softwares.html          \# Installed software page
+│       └── view\_\*.html             \# View templates for displaying extracted data
+├── README.md                       \# Project README
+└── setup.py                        \# Setup script for installing and running the project 
 
 # 
 
@@ -164,8 +190,15 @@ The purpose of Hislilogger is to provide a user-friendly tool that simplifies th
 
 ## **Data Storage**
 
-| Data Structure:/data/  ├── firefox/  │   ├── history/  │   └── bookmarks/  ├── services/  ├── softwares/  ├── bash\_history/  └── recently\_used/ |
-| :---- |
+| Data Structure:
+/data/  
+├── firefox/  
+│   ├── history/  
+│   └── bookmarks/  
+├── services/  
+├── softwares/  
+├── bash\_history/  
+└── recently\_used/ |
 
 ## **Database Handling**
 
